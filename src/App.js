@@ -1,15 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-
-import ContactoComponent from './components/pure/contacto';
+import ContactosListComponent from './components/container/contactos_list';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      <ContactoComponent></ContactoComponent>
-      </header>
+    
+        <ContactosListComponent></ContactosListComponent>
+     
     </div>
   );
 }
