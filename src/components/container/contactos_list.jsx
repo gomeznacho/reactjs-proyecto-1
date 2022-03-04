@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { Contacto } from '../models/contacto.class';
 import ContactoComponent from '../pure/contacto';
 import ContactformComponent from '../pure/forms/contactForm';
+import Contactformik from '../pure/forms/contactFormik';
 
 const ContactosListComponent = () => {
 
@@ -40,8 +41,11 @@ const ContactosListComponent = () => {
                     )
                 })}
             </div>
-            <div style={{paddingTop: '50px'}}>
+            {/* <div style={{paddingTop: '50px'}}>
                 <ContactformComponent add={addContacto}></ContactformComponent>
+            </div> */}
+            <div style={{paddingTop: '50px'}}>
+                <Contactformik add={addContacto}></Contactformik>
             </div>
 
         </div>

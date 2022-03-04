@@ -5,7 +5,6 @@ import BotonComponent from '../pure/boton'
 
 import  Dropdown  from 'rsuite/Dropdown';
 
-
 const ContactoComponent = ({ contacto, remove }) => {
 
    function removeContacto(c){
@@ -23,19 +22,7 @@ const ContactoComponent = ({ contacto, remove }) => {
                     <BotonComponent contacto = {contacto} remove={removeContacto}></BotonComponent>
                 </Dropdown.Item>
             </Dropdown>
-            
-            {/* <h2>
-                Nombre: { contacto.nombre }
-            </h2>
-            <h3>
-                Apellido: { contacto.apellido }
-            </h3>
-            <h4>
-                Email: { contacto.email }
-            </h4> */}
-            {/* <div>
-            <BotonComponent contacto = {contacto} remove={removeContacto}></BotonComponent>
-            </div> */}
+        
         </div>
     );
 };
@@ -44,6 +31,5 @@ ContactoComponent.propTypes = {
     contacto: PropTypes.instanceOf(Contacto),
     remove: PropTypes.func.isRequired
 };
-
 
 export default ContactoComponent;

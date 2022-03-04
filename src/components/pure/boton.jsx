@@ -15,7 +15,7 @@ const BotonComponent = ({contacto, remove}) => {
   
     return (
         <div>
-                Estado: { estado ? 'Contacto en linea': 'Contacto no disponible'}
+               
             <div>
             <button onClick={cambiarEstado}>
                 Cambiar estado
